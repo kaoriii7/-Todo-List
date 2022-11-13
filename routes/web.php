@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoController;
+use App\Http\Controllers\SearchController;
 
 
 /*
@@ -33,3 +34,7 @@ Route::get('/edit', [TodoController::class, 'index']);
 Route::post('/edit', [TodoController::class, 'update']);
 Route::get('/delete', [TodoController::class, 'index']);
 Route::post('/delete', [TodoController::class, 'delete']);
+
+Route::get('/search', [SearchController::class, 'index']);
+Route::get('/find', [SearchController::class, 'index']);
+Route::post('/find', [SearchController::class, 'search']);

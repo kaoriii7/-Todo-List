@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class TodoController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $todos = Todo::all();
         $tags = Tag::all();
